@@ -1,0 +1,12 @@
+{% extends "archive.html" %}
+
+{% block mainbody %}
+<button type="button" data-loading-text="load..." class="btn btn-primary">
+  Loading state
+</button>
+
+<button type="button" class="btn" data-complete-text="finished!" >...</button>
+<script>
+  $('.btn').button('complete')
+</script>
+{% endblock %}
